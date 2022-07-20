@@ -192,11 +192,13 @@ div{
 }
 
 .info__speed--separador{
+    color: black;
     display: flex;
     justify-content: center;
 }
 
 .info__speed--titulo{
+    color: black;
     display: flex;
     flex-wrap: wrap;
     font-size: 30px;
@@ -207,6 +209,7 @@ div{
 }
 
 .info__speed--txt{
+    color: black;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
