@@ -23,20 +23,20 @@
                 </a>
             </div>
             <nav class="navbar navbar-expand-lg" >
-  <div class="container-fluid">
+    <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ms-auto">
+        <div class="navbar-nav ms-auto">
         <a class="text-light" href="../index.html">HOME</a>
         <a class="text-light" href="#">TIENDA</a>
         <a class="text-light" href="../pages/eventos.html">EVENTOS</a>
         <a class="text-light" href="../pages/nosotros.html">NOSOTROS</a>
         <a class="text-light" href="../pages/speed-app.html">SPEED APP</a>
-      </div>
+        </div>
     </div>
-  </div>
+    </div>
 </nav>
         <!-- <nav class="header__nav--pag">
             <ul class="header__nav--paglis">
@@ -50,61 +50,85 @@
     </section>
     </header>
     <main class="main__tienda">
-        <section class="main__portada">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                <img src="../resources/PORTADA-NUESTROS-PRODUCTOS.jpg" class="d-block w-100" alt="Portada de prodcutos">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                <img src="../resources/ropa.jpg" class="d-block w-100" alt="portada de ropa">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                <img src="../resources/frios.jpg" class="d-block w-100" alt="portada de heladeras">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                <img src="../resources/regalos.jpg" class="d-block w-100" alt="portada de auriculares">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        <!-- <section class="main__portada">
             <div class="portada__prod" ></div>
-        </section>
+        </section> -->
         <h1 class="titulo__productos">Productos</h1>
         <section class="productos__grid">
             <article class="main__card card__uno">
                 <img class="productos__img" src="../resources/SPEED-250-Producto.jpg" alt="lata de speed 250ml">
                 <h2 class="producto__texto">Speed</h2>
                 <p class="producto__texto">Energizante SPEED de 250ml</p>
-                <button class="boton__tienda">Agregar al carrito</button>
+                <button class="boton__tienda"><p>Agregar al carrito<p></button>
             </article>
             <article class="main__card card__dos">
                 <img class="productos__img" src="../resources/SPEED-500-Producto.jpg" alt="lata de speed 500ml">
                 <h2 class="producto__texto">Speed XL</h2>
                 <p class="producto__texto">Energizante SPEED de 500ml</p>
-                <button class="boton__tienda">Agregar al carrito</button>
+                <button class="boton__tienda"><p>Agregar al carrito<p></button>
             </article>
             <article class="main__card card__tres">
                 <img class="productos__img" src="../resources/HODLMOSER-Producto.jpg" alt="Botella de licor holdmoser">
                 <h2 class="producto__texto">Hödlmoser</h2>
                 <p class="producto__texto">Licor de hierbas HODLMOSER</p>
-                <button class="boton__tienda">Agregar al carrito</button>
+                <button class="boton__tienda"><p>Agregar al carrito<p></button>
             </article>
             <article class="main__card card__cuatro">
                 <img class="productos__img" src="../resources/LIASON-Producto-2.jpg" alt="botella de champagne liason">
                 <h2 class="producto__texto">Liason</h2>
                 <p class="producto__texto">Espumante LIASON extra brut</p>
-                <button class="boton__tienda">Agregar al carrito</button>
+                <button class="boton__tienda"><p>Agregar al carrito<p></button>
             </article>
             <article class="main__card card__cinco">
                 <img class="productos__img" src="../resources/BLOCK-473-Producto.jpg" alt="lata de Energizante block 473ml">
                 <h2 class="producto__texto">BLOCK</h2>
                 <p class="producto__texto">Energizante BLOCK 473ml</p>
-                <button class="boton__tienda">Agregar al carrito</button>
+                <button class="boton__tienda"><p>Agregar al carrito<p></button>
             </article>
             <article class="main__card card__seis">
                 <img class="productos__img" src="../resources/BLOCK-AGUA-500-Producto.jpg" alt="botella de agua BLOCK">
                 <h2 class="producto__texto">AGUA BLOCK</h2>
                 <p class="producto__texto">Agua BLOCK 500ml</p>
-                <button class="boton__tienda">Agregar al carrito</button>
+                <button class="boton__tienda"><p>Agregar al carrito<p></button>
             </article>
             <article class="main__card card__siete">
                 <img class="productos__img" src="../resources/DU-Producto.jpg" alt="botella de champagne DU">
                 <h2 class="producto__texto">DU</h2>
                 <p class="producto__texto">Espumante DU</p>
-                <button class="boton__tienda">Agregar al carrito</button>
+                <button class="boton__tienda"><p>Agregar al carrito<p></button>
             </article>
             <article class="main__card card__ocho">
                 <img class="productos__img" src="../resources/RENAISSANCE-Producto-2.jpg" alt="botella de champagne renaissance">
                 <h2 class="producto__texto">RENAISSANCE</h2>
-                <p class="producto__texto">Espumante RENAISSANCE extra brut</p>
-                <button class="boton__tienda">Agregar al carrito</button>
+                <p class="producto__texto">Espumante RENAISSANCE</p>
+                <button class="boton__tienda"><p>Agregar al carrito<p></button>
             </article>
         </section>
-        <div>.</div>
+        <div class="ss">.</div>
     </main>
     <footer> <!-- pie de pagina -->
         <section class="footer__gral">

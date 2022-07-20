@@ -104,13 +104,11 @@ div{
 
 .header__pag--img{
     display: flex;
-    width: 40%;
-    justify-content:start;
+    width: 60%;
+    justify-content:flex-start;
     flex-wrap: wrap;
-    margin: 0px;
+    margin-left: 30px;
     padding: 0px;
-    justify-content: center;
-    align-items: center;
 
 }
 
@@ -417,7 +415,7 @@ footer{
 .main__portada{
     display: grid;
     width: 100vw;
-    height: 100vh;
+    height: 65vh;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
 }
@@ -428,6 +426,7 @@ footer{
     background-image: url(../resources/PORTADA-NUESTROS-PRODUCTOS.jpg);
     background-position: center;
     background-size:cover;
+    height: 60vh;
     background-repeat: no-repeat;
 }
 
@@ -463,11 +462,12 @@ footer{
     display: flex;
     justify-content: center;
     color: white;
+    margin: 10px;
     align-items: center;
 }
 
 .boton__tienda{
-    width: 130px;
+    width: 150px;
     height: 30px;
     margin: 10px;
     border: white solid 1px;
@@ -477,8 +477,17 @@ footer{
     border-radius: 15px;
 }
 
+.boton__tienda p{
+    font-size:medium ;
+}
+
+.ss{
+    color: black;
+}
+
+
 .boton__tienda:hover{
-    width: 130px;
+    width: 150px;
     height: 30px;
     margin: 10px;
     border: white solid 1px;
@@ -492,7 +501,7 @@ footer{
 
 .producto__texto{
     color: white;
-    margin: 2px;
+    margin: 5px;
 }
 
 .card__uno{
@@ -712,7 +721,8 @@ footer{
     justify-content: center;
     align-items: center;
     letter-spacing: 0.07em;
-    line-height: 1
+    line-height: 1;
+    margin: 0px;
 }
 
 /* SPEED APP */
@@ -827,6 +837,21 @@ footer{
     background-color: black;
 }
 
+.shadow{
+    grid-column: 6/7;
+    grid-row: 1/4;
+    box-shadow: 0px 0px 50px red;
+}
+
+.titulo__contacto{
+    color: white;
+}
+
+
+.form-floating{
+    width: 30vw;
+}
+
 .titulo__nosotros{
     display: grid;
     grid-column: 1/5;
@@ -834,6 +859,7 @@ footer{
     justify-content: center;
     align-items: center;
     color: white;
+    margin: 10px;
     background-color: black;
     text-align: center;
     width: 100%;
@@ -852,6 +878,7 @@ footer{
     background-image: url(../resources/iconos.png);
     background-position: 50% 50%;
     background-size:contain;
+    margin: 10px;
     background-color: black;
     background-repeat: no-repeat;
 }
@@ -861,7 +888,8 @@ footer{
     grid-column: 2/4;
     grid-row: 3/4;
     width: 100%;
-    height: 100%;
+    height: 80%;
+    margin-top: 100px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -965,17 +993,14 @@ footer{
     border-radius: 4px;
 }
 
-.form__boton{
+.btn{
     background-color: red;
-    align-items: center;
-    justify-content: center;
     color: white;
-    border: solid rgb(82, 4, 4) 1px;
-    border-radius: 5px;
-    width: 150px;
-    margin: 2px;
-    height: 30px;
-    padding: 5px;
+    border: solid rgb(34, 2, 2) 1px;
+}
+
+.carousel{
+    width: 100vw;
 }
 
 /* celular */
@@ -1417,7 +1442,6 @@ footer{
 }
 
 
-
 }
 
 
@@ -1435,8 +1459,8 @@ footer{
         }
 
     .main__card{
-        width: 18vw;
-        height: 25vh;
+        width: 23vw;
+        height: 30vh;
     }
     
     .titulo__productos{
@@ -1496,8 +1520,17 @@ footer{
         display: none;
     }
     .header__pag{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100vw;
+    }
+
+    .navbar{
+        grid-column: 1/2;
+        grid-row: 2/3;
     }
 
     .main__tienda{
@@ -1505,7 +1538,7 @@ footer{
     }
 
     .header__pag--img{
-        justify-content: start;
+        justify-content: center;
         align-items: flex-start;
         width: auto;
     }
