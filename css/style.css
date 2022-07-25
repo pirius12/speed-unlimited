@@ -274,14 +274,12 @@ footer{
         outline-offset, outline-color,
         background-color;
     transition-duration: .25s;
-    -webkit-appearance: none;
+    -webkit-border-radius: 50;
 }
 
 .icon:hover {
     outline-offset: 4px;
     color: white;
-    -webkit-appearance: none;
-    border-radius: 50;
 }
 
 .icon:hover i {
@@ -294,8 +292,6 @@ footer{
             #fd5949 45%, #d6249f 60%,
             #285AEB 90%);
     outline-color: #a02d76;
-    -webkit-appearance: none;
-    border-radius: 50;
 }
 
 .icon--twitter:hover {
