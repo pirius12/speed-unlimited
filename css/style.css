@@ -275,7 +275,6 @@ footer{
         background-color;
     transition-duration: .25s;
     appearance: none;
-    -webkit-appearance: none;
 }
 
 .icon:hover {
@@ -1295,7 +1294,6 @@ footer{
     .icon{
         margin-bottom: 5px;
         appearance: none;
-        -webkit-appearance: none;
     }
 
     .titulo__productos{
@@ -1760,7 +1758,6 @@ footer{
         justify-content:top;
         align-items: center;
         appearance: none;
-        -webkit-appearance: none;
     }
 
 
