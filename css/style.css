@@ -225,18 +225,20 @@ div{
 /* FOOTER */
 
 footer{
-    display: flex;
     width: 100vw;
     font:100; color: white;
     background-color: black;
     letter-spacing: 1px;
-    flex-wrap: wrap;
-    justify-content:space-around 
+}
+
+.ayuda{
+    display: flex;
+    flex-direction: column;
 }
 
 .footer__gral{
     display: grid;
-    grid-template-columns: 3fr 2fr 1fr 3fr;
+    grid-template-columns: 3fr 3fr 3fr;
     grid-template-rows: 1fr;
 
 }
@@ -245,6 +247,83 @@ footer{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+}
+
+.icons {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 40px 10px 0px 0px;
+    column-gap: 25px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid red;
+    transition-property:
+        outline-offset, outline-color,
+        background-color;
+    transition-duration: .25s;
+}
+
+.icon:hover {
+    outline-offset: 4px;
+    color: white;
+}
+
+.icon:hover i {
+    animation: shake .25s;
+}
+
+.icon--instagram:hover {
+    background-image: radial-gradient(circle at 30% 107%,
+            #fdf497 0%, #fdf497 5%,
+            #fd5949 45%, #d6249f 60%,
+            #285AEB 90%);
+    outline-color: #a02d76;
+}
+
+.icon--twitter:hover {
+    background-color: #1da1f2;
+    outline-color: #1da1f2;
+}
+
+.icon--whatsapp:hover {
+    background-color: #00b52d;
+    outline-color: #15e61f;
+}
+
+.icon--github:hover {
+    background-color: #5f226b;
+    outline-color: #ab11ca;
+}
+
+@keyframes shake {
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
 }
 
 .footer__nosotros{
@@ -260,11 +339,12 @@ footer{
 }
 
 .info__nosotros{
+    display: flex;
     grid-column: 1/2;
     grid-row: 1/2;
-    align-content: center;
-    margin: 10px;
-    justify-content: center;
+    margin: 20px 0px 0px 10px;
+    justify-content:left;
+    align-items: center;
 }
 
 .footer__titulo--nosotros{
@@ -287,7 +367,6 @@ footer{
     grid-column: 2/3;
     grid-row: 1/2;
     display: flex;
-    margin-left: 100px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -316,13 +395,15 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
+    padding: 0px;
 }
 
 
 .footer__boton{
     display: flex;
-    justify-content: left;
+    justify-content:center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 
@@ -336,9 +417,26 @@ footer{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border-radius: 5px;
-    color: gray;
-    font-family: 'Roboto', sans-serif; color: black;
+    border-radius: 20px;
+    background-color: black;
+    border: 1px solid red;
+    font-family: 'Roboto', sans-serif; color: rgb(255, 255, 255);
+    font-size: large;
+}
+
+.boton__soporte:hover{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: flex;
+    width: 150px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background-color: rgb(66, 8, 8);
+    border: 1px solid red;
+    font-family: 'Roboto', sans-serif; color: rgb(255, 255, 255);
     font-size: large;
 }
 
@@ -1183,20 +1281,17 @@ footer{
         align-items: center;
     }
 
-    .footer__imagen{
+    .icons{
         grid-column: 1/2;
         grid-row: 5/6;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0px;
+        margin: 15px;
     }
 
-    .footer__imagen--redes{
-        padding: 5px;
-        margin: 2px;
-        margin-top: 0px;
-        width: 30px;
+    .icon{
+        margin-bottom: 5px;
     }
 
     .titulo__productos{
@@ -1609,6 +1704,13 @@ footer{
         flex-wrap: wrap;
         flex-direction: column;
     }
+    
+    .ayuda{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     .footer__titulo--ayuda{
         display: flex;
@@ -1619,7 +1721,7 @@ footer{
     
     .footer__boton{
         grid-column: 2/3;
-        grid-row: 2/3;
+        grid-row: 1/2;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1629,24 +1731,28 @@ footer{
         grid-column: 3/4;
         grid-row: 1/2;
         display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
-    .footer__imagen{
-        grid-column: 3/4;
-        grid-row: 2/3;
+    .redes{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0px;
     }
 
-    .footer__imagen--redes{
+    .icons{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content:end;
+        align-items: e;
+        margin: 15px;
+    }
+
+    .icon{
         padding: 5px;
         margin: 2px;
         margin-top: 0px;
-        width: 30px;
         justify-content:top;
         align-items: center;
     }

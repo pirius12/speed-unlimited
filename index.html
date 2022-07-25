@@ -8,6 +8,8 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- letras de google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,6 +36,7 @@
         </section> 
     </header>
     <main><!-- todo el contenido menos header o footer -->
+        <section>
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="3000">
@@ -67,8 +70,12 @@
         <section class="footer__gral">
                 <div class="footer__titulonosotros">
                     <h3 class="footer__titulo--nosotros" >Nosotros</h3>
-                <p class="info__nosotros">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde quaerat corrupti pariatur possimus! Aliquid earum fugiat fugit</p>
+                <p class="info__nosotros">Berón de Astrada 670, Ramos Mejía, Buenos Aires <br>
+                011 4460-4460 <br>
+                info@speed-unlimited.com.ar
+                </p>
                 </div>
+                <section class="ayuda">
                     <div class="footer__tituloayuda">
                         <h3 class="footer__titulo--ayuda" >Ayuda</h3>
                     
@@ -81,23 +88,24 @@
                         <div class="footer__boton">
                             <button class="boton__soporte">Chat soporte</button>
                         </div>
+                    </section>
+        <section class="redes">
             <h3 class="footer__titulo--redes">Encontranos en</h3>
-            <div class="footer__imagen">
-                <a href="#" target="_blank">
-                <img class="footer__imagen--redes" src="resources/facebook.png" alt="facebook">
+            <div class="icons">
+                <a href="https://www.instagram.com/speedunlimited_/?hl=es" target="_blank" class="icon icon--instagram">
+                  <i class="ri-instagram-line"></i>
                 </a>
-                <a href="#" target="_blank">
-                <img class="footer__imagen--redes" src="resources/whatsapp.png" alt="whatsapp">
+                <a href="#" class="icon icon--twitter">
+                  <i class="ri-twitter-line"></i>
                 </a>
-                <a href="https://www.instagram.com/speedunlimited_/?hl=es" target="_blank">
-                <img class="footer__imagen--redes" src="resources/instagram.png" alt="instagram">
+                <a href="#" class="icon icon--whatsapp">
+                  <i class="ri-whatsapp-line"></i>
                 </a>
-                <a href="#" target="_blank">
-                <img class="footer__imagen--redes" src="resources/twitter.png" alt="twitter"> 
+                <a href="https://github.com/pirius12/speed-unlimited" target="_blank" class="icon icon--github">
+                  <i class="ri-github-line"></i>
                 </a>
-            </div>
-            <!-- <p class="footer__derechos">todos los derechos reservados</p> --><!-- la "P" para parrafos -->  
-            
+              </div>
+            </section>
         </section>
     </footer>
     <!-- JavaScript Bundle with Popper -->
