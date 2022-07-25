@@ -270,11 +270,11 @@ footer{
     color: #fff;
     border-radius: 50%;
     outline: 2px solid red;
+    border: 2px solid red;
     transition-property:
         outline-offset, outline-color,
         background-color;
     transition-duration: .25s;
-    appearance: none;
 }
 
 .icon:hover {
@@ -1293,7 +1293,6 @@ footer{
 
     .icon{
         margin-bottom: 5px;
-        appearance: none;
     }
 
     .titulo__productos{
@@ -1757,7 +1756,6 @@ footer{
         margin-top: 0px;
         justify-content:top;
         align-items: center;
-        appearance: none;
     }
 
 
