@@ -15,6 +15,11 @@ header{
     padding: 0px;
 }
 
+body{
+    width: 99vw;
+    overflow-x: hidden;
+}
+
 .text-light {
     text-decoration: none;
     font-family: 'Fjalla One', sans-serif;
@@ -247,6 +252,10 @@ footer{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+}
+
+.redes{
+    padding-right: 5%;
 }
 
 .icons {
@@ -1304,7 +1313,7 @@ footer{
         font-size: 26px;
         color: #fff;
         border-radius: 50%;
-        outline: 2px solid red;
+        outline: 1px solid #fff;
         transition-property:
             outline-offset, outline-color,
             background-color;
