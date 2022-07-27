@@ -900,7 +900,6 @@ div {
           border: 2px solid white;
           border-radius: 50%;
           outline: none;
-          transition-property: outline-offset, outline-color, background-color;
           transition-duration: .25s;
           outline-style: none; }
           footer .footer__gral .redes .icons .icon:hover {
