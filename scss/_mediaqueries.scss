@@ -419,22 +419,24 @@
                 border-radius: 30px;
                 font-weight: bold;
                 background-image: linear-gradient(rgb(255, 0, 0), rgb(92, 16, 16));
+
+                &:hover{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 300px;
+                    height: 50px;
+                    color: white;
+                    font-size: large;
+                    border-radius: 30px;
+                    font-weight: bold;
+                    background-image: linear-gradient(rgb(92, 16, 16), rgb(255, 0, 0));
+                    transform: scale(1.10, 1.10);
+                    transition: all 0.5s;
+                }
+    
             }
             
-            &:hover{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 300px;
-                height: 50px;
-                color: white;
-                font-size: large;
-                border-radius: 30px;
-                font-weight: bold;
-                background-image: linear-gradient(rgb(92, 16, 16), rgb(255, 0, 0));
-                transform: scale(1.10, 1.10);
-                transition: all 0.5s;
-            }
             
         }
 
