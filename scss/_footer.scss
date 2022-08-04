@@ -1,3 +1,5 @@
+@import "operators";
+
 /* FOOTER */
 
 footer{
@@ -133,10 +135,8 @@ footer{
                 grid-column: 2/3;
                 grid-row: 1/2;
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex(column, center, center);
                 flex-wrap: wrap;
-                flex-direction: column;
 
                 .footer__titulo--ayuda{
                     display: flex;
@@ -155,7 +155,7 @@ footer{
 
                     .footer__preguntas{
                         list-style: none;
-                        font-family: 'Roboto', sans-serif; color: $color-principal;
+                        font-family: $font-principal; color: $color-principal;
                         text-align: left;
                         text-align: center;
                         flex-direction: column;
@@ -163,7 +163,7 @@ footer{
                         color: white;
 
                         & a{
-                            font-family: 'Roboto', sans-serif; color: $color-principal;
+                            font-family: $font-principal; color: $color-principal;
                             text-align: center;
                             flex-direction: column;
                             color: white;
@@ -195,7 +195,7 @@ footer{
                 border-radius: 20px;
                 background-color: $color-principal;
                 border: 1px solid $color-secundario;
-                font-family: 'Roboto', sans-serif; color: rgb(255, 255, 255);
+                font-family: $font-principal; color: rgb(255, 255, 255);
                 font-size: large;
 
 
@@ -211,7 +211,7 @@ footer{
                     border-radius: 20px;
                     background-color: rgb(66, 8, 8);
                     border: 1px solid $color-secundario;
-                    font-family: 'Roboto', sans-serif; color: rgb(255, 255, 255);
+                    font-family: $font-principal; color: rgb(255, 255, 255);
                     font-size: large;
                 }
             }

@@ -13,16 +13,12 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-row: auto;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
+            @include flex(column, center, center);
+            
             .header__pag--img{
                 grid-column: 1/2;
                 grid-row: 1/2;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include flex(column, center, center);
                 width: 50vw;
             }
         }
@@ -36,18 +32,14 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: auto;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            @include flex(column, center, center);
             gap: 20px;
 
             .footer__titulonosotros{
                 grid-column: 1/2;
                 grid-row: 1/2;
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include flex(column, center, center);
 
                 .footer__titulo--nosotros{
                     display: flex;
@@ -70,9 +62,7 @@
                 grid-column: 1/2;
                 grid-row: 4/5;
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include flex(column, center, center);
 
                 .footer__titulo--redes{
                     grid-column: 1/2;
@@ -163,20 +153,16 @@
                 grid-row: 2/3;
                 display: flex;
                 margin-left: 0px;
-                justify-content: center;
-                align-items: center;
+                @include flex(column, center, center);
                 flex-wrap: wrap;
-                flex-direction: column;
 
                 .footer__tituloayuda{
                     grid-column: 1/2;
                     grid-row: 2/3;
                     display: flex;
                     margin-left: 0px;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex(column, center, center);
                     flex-wrap: wrap;
-                    flex-direction: column;
                 }
 
                 .footer__boton{
@@ -400,13 +386,11 @@
 
             &--cuadro{
                 display: flex;
-                justify-content: center;
-                flex-direction: column;
+                @include flex(column, center, center);
                 padding: 15px;
                 width: 70%;
                 margin: 15px;
                 font-size: 20px;
-                align-items: center;
                 border: solid $color-secundario 3px;
             }
 
@@ -516,9 +500,7 @@ header{
     .header__pag{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column, center, center);
         width: 100vw;
 
         .header__pag--img{
@@ -570,19 +552,15 @@ header{
 
         .ayuda{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex(column, center, center);
 
             .footer__tituloayuda{
                 grid-column: 2/3;
                 grid-row: 1/2;
                 display: flex;
                 margin-left: 0px;
-                justify-content: center;
-                align-items: center;
+                @include flex(column, center, center);
                 flex-wrap: wrap;
-                flex-direction: column;
 
                 .footer__titulo--ayuda{
                     display: flex;
@@ -602,9 +580,7 @@ header{
 
         .redes{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex(column, center, center);
 
             .footer__titulo--redes{
                 grid-column: 3/4;
@@ -866,12 +842,10 @@ header{
 
             .info__texto--cuadro{
                 display: flex;
-                justify-content: center;
-                flex-direction: column;
+                @include flex(column, center, center);
                 padding: 15px;
                 width: 70%;
                 font-size: 20px;
-                align-items: center;
                 border: solid $color-secundario 3px;
             }
 

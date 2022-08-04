@@ -45,7 +45,7 @@ header{
                 list-style: none;
 
                 .header__item{
-                    font-family: 'Fjalla One', sans-serif;
+                    font-family: $font-titulos;
                     justify-content: center;
 
                     & a {
@@ -69,8 +69,7 @@ header{
     grid-template-rows: 1fr;
     gap: 15px;
     width: 100%;
-    justify-content: center;
-    align-items: center;
+    @extend .centrar;
 
     .header__pag--img{
         display: flex;
