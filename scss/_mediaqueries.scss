@@ -263,27 +263,44 @@
         gap: 10px;
         background-color: $color-principal;
 
-        
-    }
+        .formulario__boot{
+            grid-column: 1/2;
+            grid-row: 4/4;
+            width: 100vw;
+            flex-direction: column;
+            background-color: rgb(0, 0, 0);
+    
+            .center__cc{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
 
-    .titulo__nosotros{
-        display: grid;
-        grid-column: 1/2;
-        grid-row: 1/1;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        background-color: $color-principal;
-        text-align: center;
-        width: 97vw;
-
-        .titulo__nosotros--txt{
+        .titulo__nosotros{
             display: grid;
             grid-column: 1/2;
-            grid-row:  auto;
+            grid-row: 1/1;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: $color-principal;
+            text-align: center;
             width: 97vw;
+    
+            .titulo__nosotros--txt{
+                display: grid;
+                grid-column: 1/2;
+                grid-row:  auto;
+                width: 97vw;
+            }
+        }
+
+        .titulo__marcas{
+            display: none;
         }
     }
+
 
     
     .img__iconos{
@@ -310,18 +327,8 @@
         background-color: $color-principal;
     }
 
-    .formulario__boot{
-        grid-column: 1/2;
-        grid-row: 4/4;
-        width: 100vw;
-        background-color: rgb(0, 0, 0);
-    }
 
-    .center__cc{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
 
     .shadow{
         width: 92%;
@@ -333,9 +340,6 @@
         width: 70vw;
     }
     
-    .titulo__marcas{
-        display: none;
-    }
     
     
     .speed__marca{
