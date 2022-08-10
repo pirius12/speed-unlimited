@@ -36,3 +36,14 @@
     }
     
 }
+
+.img__swipe{
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+.img__swipe--carrousel{
+/*     margin-top: 5px; */
+    width: 100%
+}

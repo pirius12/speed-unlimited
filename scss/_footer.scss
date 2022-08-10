@@ -18,6 +18,7 @@ footer{
         .footer__titulonosotros{
             grid-column: 1/2;
             grid-row: 1/2;
+            padding-left: 1vw;
 
             .footer__titulo--nosotros{
                 display: flex;
@@ -38,7 +39,7 @@ footer{
         }
 
         .redes{
-            padding-right: 5%;
+            padding-right: 2vw;
 
             .footer__titulo--redes{
                 grid-column: 4/5;

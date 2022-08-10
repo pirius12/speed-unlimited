@@ -38,7 +38,8 @@ footer {
     grid-template-rows: 1fr; }
     footer .footer__gral .footer__titulonosotros {
       grid-column: 1/2;
-      grid-row: 1/2; }
+      grid-row: 1/2;
+      padding-left: 1vw; }
       footer .footer__gral .footer__titulonosotros .footer__titulo--nosotros {
         display: flex;
         flex-wrap: wrap;
@@ -53,7 +54,7 @@ footer {
       justify-content: left;
       align-items: center; }
     footer .footer__gral .redes {
-      padding-right: 5%; }
+      padding-right: 2vw; }
       footer .footer__gral .redes .footer__titulo--redes {
         grid-column: 4/5;
         grid-row: 1/2;
@@ -222,12 +223,13 @@ header {
         list-style: none; }
         header .header .header__nav .header__lista .header__item {
           font-family: "Fjalla One", sans-serif;
-          justify-content: center; }
+          justify-content: center;
+          font-size: 1rem; }
           header .header .header__nav .header__lista .header__item a {
             text-decoration: none;
             color: white;
             background-color: black;
-            font-size: 20px; }
+            font-size: xx-large; }
 
 /* HEADER PAGINAS */
 .header__pag {
@@ -246,6 +248,21 @@ header {
     .header__pag .header__pag--img .logo__pag {
       height: 150px;
       padding: 10px; }
+  .header__pag .navbar {
+    padding-right: 2vw; }
+
+.text-light {
+  text-decoration: none;
+  font-family: "Fjalla One", sans-serif;
+  font-size: x-large;
+  margin: 15px; }
+
+.navbar-toggler {
+  border: 1px solid red; }
+
+.navbar-toggler .navbar-toggler-icon {
+  color: white;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28600, 600, 600, 2%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
 
 /* CONDICIONAL IF */
 .color-twitter {
@@ -300,6 +317,15 @@ header {
     font-weight: 550;
     letter-spacing: 0.07em;
     line-height: 1; }
+
+.img__swipe {
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap; }
+
+.img__swipe--carrousel {
+  /*     margin-top: 5px; */
+  width: 100%; }
 
 /* TIENDA */
 .main__tienda {
@@ -701,29 +727,7 @@ p {
   font-family: "Roboto", sans-serif; }
 
 div {
-  font-size: 16px; }
-
-.text-light {
-  text-decoration: none;
-  font-family: "Fjalla One", sans-serif;
-  font-size: x-large;
-  margin: 15px; }
-
-.navbar-toggler {
-  border: 1px solid red; }
-
-.navbar-toggler .navbar-toggler-icon {
-  color: white;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28600, 600, 600, 2%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
-
-.img__swipe {
-  display: flex;
-  width: 100vw;
-  flex-wrap: wrap; }
-
-.img__swipe--carrousel {
-  margin-top: 5px;
-  width: 100%; }
+  font-size: 1rem; }
 
 /* celular */
 @media (min-width: 320px) and (max-width: 575px) {
@@ -746,6 +750,41 @@ div {
         justify-content: center;
         align-items: center;
         width: 50vw; }
+    header .header {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100vw; }
+      header .header .header__logo {
+        display: flex;
+        height: 100%;
+        flex-wrap: wrap;
+        justify-content: center; }
+        header .header .header__logo .logo {
+          height: 150px;
+          padding: 10px; }
+      header .header .header__nav {
+        display: flex;
+        flex-wrap: wrap; }
+        header .header .header__nav .header__lista {
+          display: flex;
+          width: 100%;
+          margin-top: 25px;
+          padding: 5px;
+          justify-content: space-around;
+          align-items: center;
+          flex-wrap: wrap;
+          list-style: none; }
+          header .header .header__nav .header__lista .header__item {
+            font-family: "Fjalla One", sans-serif;
+            justify-content: center;
+            font-size: 1rem; }
+            header .header .header__nav .header__lista .header__item a {
+              text-decoration: none;
+              color: white;
+              background-color: black;
+              font-size: large; }
   /* FOOTER */
   footer .footer__gral {
     display: grid;

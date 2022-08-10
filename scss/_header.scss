@@ -47,12 +47,13 @@ header{
                 .header__item{
                     font-family: $font-titulos;
                     justify-content: center;
+                    font-size: 1rem;
 
                     & a {
                         text-decoration: none;
                         color: white;
                         background-color: $color-principal;
-                        font-size: 20px;
+                        font-size: xx-large;
                     }
                 }
             }
@@ -84,5 +85,26 @@ header{
             padding: 10px;
         }
     }
+
+    .navbar{
+        padding-right: 2vw;
+    }
+}
+
+.text-light {
+    text-decoration: none;
+    font-family: $font-titulos;
+    font-size: x-large;
+    margin: 15px;
+}
+
+.navbar-toggler{
+    border: 1px solid $color-secundario;
+
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    color: white;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28600, 600, 600, 2%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 

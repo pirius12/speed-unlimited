@@ -14,8 +14,6 @@
     padding: 0px;
 }
 
-
-
 body{
     overflow-x: hidden;
 }
@@ -38,38 +36,7 @@ p{
 }
 
 div{
-    font-size: 16px;
+    font-size: 1rem;
 }
-
-
-.text-light {
-    text-decoration: none;
-    font-family: $font-titulos;
-    font-size: x-large;
-    margin: 15px;
-}
-
-.navbar-toggler{
-    border: 1px solid $color-secundario;
-
-}
-
-.navbar-toggler .navbar-toggler-icon {
-    color: white;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28600, 600, 600, 2%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-
-.img__swipe{
-    display: flex;
-    width: 100vw;
-    flex-wrap: wrap;
-}
-
-.img__swipe--carrousel{
-    margin-top: 5px;
-    width: 100%
-}
-
 
 @import "mediaqueries";
