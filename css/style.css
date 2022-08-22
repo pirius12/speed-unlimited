@@ -826,6 +826,26 @@ div {
               color: white;
               background-color: black;
               font-size: large; }
+    header .header__item a {
+      position: relative;
+      text-decoration: none; }
+      header .header__item a::after, header .header__item a::before {
+        transition: all 0.5s; }
+      header .header__item a::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '.';
+        color: transparent;
+        background: black;
+        height: 3px; }
+      header .header__item a:hover {
+        color: red; }
+      header .header__item a:hover:after {
+        width: 100%; }
   /* FOOTER */
   footer .footer__gral {
     display: grid;
@@ -1151,6 +1171,26 @@ div {
       header .header__pag .navbar {
         grid-column: 1/2;
         grid-row: 2/3; }
+    header .header__item a {
+      position: relative;
+      text-decoration: none; }
+      header .header__item a::after, header .header__item a::before {
+        transition: all 0.5s; }
+      header .header__item a::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '.';
+        color: transparent;
+        background: black;
+        height: 3px; }
+      header .header__item a:hover {
+        color: red; }
+      header .header__item a:hover:after {
+        width: 100%; }
   /* FOOTER */
   .footer__gral {
     display: grid;

@@ -71,7 +71,39 @@
                 }
             }   
         }
+
+        .header__item {
+
+            a {
+                position: relative;
+                text-decoration: none;
         
+                &::after, &::before {
+                    transition: all 0.5s;
+                }
+                
+                &::after {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    width: 0%;
+                    content: '.';
+                    color: transparent;
+                    background: $color-principal;
+                    height: 3px;
+                }
+                
+                &:hover {
+                    color: $color-secundario;
+                }
+                
+                &:hover:after {
+                    width: 100%;
+                }
+            }
+        }
     }
 
 
@@ -568,6 +600,39 @@ header{
         .navbar{
             grid-column: 1/2;
             grid-row: 2/3;
+        }
+    }
+
+    .header__item {
+
+        a {
+            position: relative;
+            text-decoration: none;
+    
+            &::after, &::before {
+                transition: all 0.5s;
+            }
+            
+            &::after {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 0%;
+                content: '.';
+                color: transparent;
+                background: $color-principal;
+                height: 3px;
+            }
+            
+            &:hover {
+                color: $color-secundario;
+            }
+            
+            &:hover:after {
+                width: 100%;
+            }
         }
     }
 }
