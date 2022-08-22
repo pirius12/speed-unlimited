@@ -50,9 +50,15 @@ footer {
       display: flex;
       grid-column: 1/2;
       grid-row: 1/2;
+      flex-direction: column;
       margin: 20px 0px 0px 10px;
       justify-content: left;
-      align-items: center; }
+      align-items: left;
+      list-style: none;
+      font-style: bold;
+      color: white;
+      font-family: "Roboto", sans-serif;
+      padding: 0px; }
     footer .footer__gral .redes {
       padding-right: 2vw; }
       footer .footer__gral .redes .footer__titulo--redes {
@@ -209,6 +215,26 @@ header {
       header .header .header__logo .logo {
         height: 150px;
         padding: 10px; }
+  header .header__item a {
+    position: relative;
+    text-decoration: none; }
+    header .header__item a::after, header .header__item a::before {
+      transition: all 0.5s; }
+    header .header__item a::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: white;
+      height: 3px; }
+    header .header__item a:hover {
+      color: red; }
+    header .header__item a:hover:after {
+      width: 100%; }
 
 /* HEADER PAGINAS */
 .header__pag {
@@ -236,17 +262,6 @@ header {
   font-size: x-large;
   margin: 15px; }
 
-/* .text-light::before {
-    content: "";
-    display: block;
-    width: 1px;
-    border-bottom: 2px solid white;
-}
-
-::after, ::before {
-box-sizing: border-box;
-margin-bottom: -40px;
-} */
 .navbar-toggler {
   border: 1px solid red; }
 
@@ -261,6 +276,27 @@ margin-bottom: -40px;
     height: 3px;
     width: 100%;
     background-color: white; }
+
+.header__item a {
+  position: relative;
+  text-decoration: none; }
+  .header__item a::after, .header__item a::before {
+    transition: all 0.5s; }
+  .header__item a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: white;
+    height: 3px; }
+  .header__item a:hover {
+    color: red; }
+  .header__item a:hover:after {
+    width: 100%; }
 
 /* CONDICIONAL IF */
 .color-twitter {
@@ -474,20 +510,18 @@ margin-bottom: -40px;
     text-align: center;
     color: white;
     background-color: black; }
-  .grid__nosotros .fotos__marca {
-    grid-column: 1/5;
-    grid-row: 4/5;
-    background-color: black;
-    width: 100%;
-    height: 100%; }
   .grid__nosotros .speed__marca {
     grid-column: 1/2;
     grid-row: 4/5;
+    margin-left: 30px;
     background-image: url(../resources/speedmarca.png);
     background-position: 50% 50%;
     background-size: 80%;
     background-color: black;
     background-repeat: no-repeat; }
+    .grid__nosotros .speed__marca:hover {
+      transform: scale(1.4, 1.2);
+      transition: all 0.5s; }
   .grid__nosotros .hodlmoser__marca {
     grid-column: 2/3;
     grid-row: 4/5;
@@ -496,6 +530,9 @@ margin-bottom: -40px;
     background-size: 80%;
     background-color: black;
     background-repeat: no-repeat; }
+    .grid__nosotros .hodlmoser__marca:hover {
+      transform: scale(1.4, 1.2);
+      transition: all 0.5s; }
   .grid__nosotros .rena__marca {
     grid-column: 3/4;
     grid-row: 4/5;
@@ -504,6 +541,9 @@ margin-bottom: -40px;
     background-size: 80%;
     background-color: black;
     background-repeat: no-repeat; }
+    .grid__nosotros .rena__marca:hover {
+      transform: scale(1.4, 1.2);
+      transition: all 0.5s; }
   .grid__nosotros .block__marca {
     grid-column: 4/5;
     grid-row: 4/5;
@@ -512,6 +552,9 @@ margin-bottom: -40px;
     background-size: 80%;
     background-color: black;
     background-repeat: no-repeat; }
+    .grid__nosotros .block__marca:hover {
+      transform: scale(1.4, 1.2);
+      transition: all 0.5s; }
   .grid__nosotros .none1 {
     grid-column: 1/2;
     grid-row: 3/4;
