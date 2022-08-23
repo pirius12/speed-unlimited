@@ -1094,6 +1094,7 @@ div {
       grid-row: 1/2;
       background-color: black;
       justify-content: center;
+      text-align: center;
       align-items: center;
       color: white; }
       .info__app .info__texto--cuadro {

@@ -467,6 +467,7 @@
             grid-row: 1/2;
             background-color: $color-principal;
             justify-content: center;
+            text-align: center;
             align-items: center;
             color: white;
 
@@ -483,7 +484,9 @@
             .app__texto{
                 text-align: center;
                 margin: 15px;
-            }            
+            }     
+            
+            
         }
 
         .boton__cuadro--app{
